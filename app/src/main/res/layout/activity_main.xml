@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/boing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="The Boing Calcu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/operand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/unica_one"
+        android:text="Operand 1"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <EditText
+        android:id="@+id/textView3"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/unica_one"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/operand1"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/operand1"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <EditText
+        android:id="@+id/textView6"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/unica_one"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/unica_one"
+        android:text="Operand 2"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_width="78dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#E64A19"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <Button
+        android:id="@+id/subtraction"
+        android:layout_width="78dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#E64A19"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="@+id/addition"
+        app:layout_constraintTop_toBottomOf="@+id/addition" />
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_width="78dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#E64A19"
+        android:text="*"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/addition" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="78dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#E64A19"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="@+id/multiplication"
+        app:layout_constraintTop_toTopOf="@+id/subtraction" />
+
+    <Button
+        android:id="@+id/percentage"
+        android:layout_width="91dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#E64A19"
+        android:text="%"
+        app:layout_constraintEnd_toEndOf="@+id/division"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/subtraction"
+        app:layout_constraintTop_toBottomOf="@+id/subtraction" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="105dp"
+        android:layout_height="27dp"
+        android:text="The Result is"
+        app:layout_constraintEnd_toEndOf="@+id/percentage"
+        app:layout_constraintStart_toStartOf="@+id/percentage"
+        tools:layout_editor_absoluteY="588dp" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        app:layout_constraintEnd_toEndOf="@+id/Result"
+        app:layout_constraintStart_toStartOf="@+id/Result"
+        tools:layout_editor_absoluteY="631dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
