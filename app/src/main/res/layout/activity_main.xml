@@ -20,7 +20,7 @@
 
     <TextView
         android:id="@+id/operand1"
-        android:layout_width="wrap_content"
+        android:layout_width= "wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/unica_one"
         android:text="Operand 1"
